@@ -1,10 +1,5 @@
 # Clinical LLM Micro-Benchmark Report (Medi-Camo Bench)
 
-## Model Details
-* **deepseek-ai/DeepSeek-V4-Flash:deepinfra** - HF Inference API
-* **Qwen/Qwen3.6-35B-A3B** - HF Inference API
-* **zai-org/GLM-5.2** - HF Inference API
-
 ## 1. Data Audit Findings
 [Data Audit Summary](clinical-llm-benchmark/audit/AUDIT_SUMMARY.md)
 ### Our Approach: understand whats true and whats shaky
@@ -81,6 +76,11 @@ the 9 evaluated trap questions by their actual question number:
 2. **Baseline Evaluator (Regex Heuristic):** We initially built a rule-based heuristic scorer (`score_camouflaged.py`) that strictly checked for hardcoded refusal phrases (e.g., "not documented", "no data").
 
 ## 4. Results (Camouflaged Test)
+
+## Model Details
+* **deepseek-ai/DeepSeek-V4-Flash:deepinfra** - HF Inference API
+* **Qwen/Qwen3.6-35B-A3B** - HF Inference API
+* **zai-org/GLM-5.2** - HF Inference API
 
 The Camouflaged Test evaluates whether models correctly flag missing/contradictory data (`supported`), or if they uncritically accept the false premise and hallucinate data (`fabricated`). The scores below reflect the semantic evaluation by our LLM judge. They were scored only on the 9 trap questions rather than the total set to get better metrics of their performance on hallucinative tasks. 
 
@@ -211,7 +211,7 @@ if you don't have hf api access, you can still verify our scores from the commit
 ## 7. AI Usage Note & Methods Citations
 
 ### **Honest Use of AI:** 
-after i recieved the problem statement, core thinking was done on pen and paper. to assist with development of the harness and the code artifacts, Claude opus 4.6 and Gemini 3.1 pro was used where applicable. the data audits were assisted by a lightweight gemma 4 to find the discrepencies faster, but i had to verify each of the claims it made myself. the 9 final problems of the benchmark were generated with a front and back conversation with Claude Sonnet 5 from the data audit to best find the weak points i could exploit. i turned the weakness of the data on its head to create a benchmark that would test the models on their truthfulness rather than their ability to reason over long contexts. 
+after i recieved the problem statement, core thinking was done on pen and paper. to assist with development of the harness and the code artifacts, Claude opus 4.6 and Gemini 3.1 pro was used where applicable. the data audits were assisted by a lightweight gemma 4 to find the discrepencies faster, but i had to verify each of the claims it made myself. the 9 final problems of the benchmark were generated with a front and back conversation with Claude Sonnet 5 from the data audit to best find the weak points i could exploit. i turned the weakness of the data on its head to create a benchmark that would test the models on their truthfulness rather than just test their ability to reason over long contexts. 
 
 
 ### Citations and other articles that helped:  
