@@ -1,0 +1,29 @@
+# Data files — NEVER commit these
+patients_sample_3.json
+patients_sample_3*.json
+key_definitions.csv
+key_definitions*.csv
+
+# Environment
+.env
+.venv/
+__pycache__/
+*.pyc
+
+# Audit outputs (regenerated)
+audit/audit_notes.csv
+
+# Harness outputs MUST be submitted per assignment
+# harness/outputs/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Scratch
+scratch/
+
+# Temporary / Failed Scripts
+harness/run_failed.py
+harness/run_retries.py
+score_debug.txt
