@@ -11,7 +11,7 @@ Our `checks.py` suite scanned the entire dataset for structural integrity and un
 - **Silent Medication Parsing Failures (`null_structured_with_raw`)**: 
   Dozens of medications (e.g., *inj erypeg 50mcg*, *sugary dm 100/10/500*, *ab phyllin sr tablet*) have a raw `rx_med_name` but their parsed `medicine_name`, `generic_name`, and `medicine_status` are explicitly `null`. Relying on the structured `generic_name` for medication reconciliation will result in massive recall failures.
 
-## 2. Cherry-Picked Clinical Contradictions
+## 2. Selected Clinical Contradictions
 
 By comparing the raw free-text fields with the structured arrays, we discovered direct contradictions where the structured data dangerously hallucinates or misrepresents the clinician's notes.
 
