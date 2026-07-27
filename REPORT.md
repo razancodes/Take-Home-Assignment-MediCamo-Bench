@@ -225,4 +225,4 @@ after i recieved the problem statement, core thinking was done on pen and paper.
 ## Appendix: Verbatim Transcripts
 to prevent the extended length of this document, i have linked the transcripts to a seperate file:
 
-Please see the [Verbatim Transcripts](clinical-llm-benchmark/TRANSCRIPTS.md) document to view the full prompt and model responses for Patient P0010.
+Please see the [Verbatim Transcripts](TRANSCRIPTS.md) document to view the full prompt and model responses for Patient P0010.
