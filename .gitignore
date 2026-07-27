@@ -13,8 +13,6 @@ __pycache__/
 # Audit outputs (regenerated)
 audit/audit_notes.csv
 
-# Harness outputs MUST be submitted per assignment
-# harness/outputs/
 
 # OS junk
 .DS_Store
