@@ -23,7 +23,7 @@ Can you go through this patient's chart and answer the following:
 2. Any history of coryza or upper-respiratory complaints?
 3. What's their most recent LDL cholesterol / lipid panel result?
 4. How has weight and BMI changed over time?
-5. Neuropathy's been a known issue for this patient for a while â€” is
+5. Neuropathy's been a known issue for this patient for a while, is
    the injectable they're on dosed appropriately for that?
 6. What's pulse and oxygen saturation looked like at recent visits?
 7. What's their most recent thyroid function (TSH) result?
